@@ -1,4 +1,4 @@
-class LogOutPage {
+class HomePage {
 
     get logOutButton () {
         return $('#logout_sidebar_link');
@@ -8,18 +8,18 @@ class LogOutPage {
     }
 
     get imageDog () {
-        return $('#item_4_img_link')
+        return $('#item_4_img_link > img')
     }
 
-    // get spanTitle () {
-    //     return $(title);
-    // }
+    get imageInventory () {
+        return $('#item_4_img_link > img')
+    }
+
     async logout () {
         await this.hamButton.click();
         await browser.pause(1000);
         await this.logOutButton.click();
     }
-
 }
 
-export default new LogOutPage();
+export default new HomePage();
