@@ -51,6 +51,18 @@ class HomePage {
         return $('#back-to-products')
     }
 
+    get errorMessages () {
+        return $('#checkout_info_container > div > form > div.checkout_info > div.error-message-container.error > h3')
+    }
+
+    get cancelButton () {
+        return $('#cancel')
+    }
+
+    get removeButton () {
+        return $('#remove-sauce-labs-bike-light')
+    }
+
     async logout () {
         await this.hamButton.click();
         await browser.pause(1000);
