@@ -1,4 +1,4 @@
-class HomePage {
+class HomePage  {
 
     get logOutButton () {
         return $('#logout_sidebar_link');
